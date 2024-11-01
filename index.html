@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        button {
+            padding:10px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            background-color: rgb(95, 169, 179);
+            border-radius: 10px;
+            border: none;
+           
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px auto;
+            width: 80%;
+            padding-bottom: 30px;
+            max-width: 1200px;
+            background-color: beige;
+            border-radius: 10px;
+        }
+
+        #movieList {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .movie {
+            display: inline-block;
+            background-color:rgb(243, 242, 238);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            vertical-align: top;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .movie img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .movie h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .movie p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #020202;
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+        <h1>Search Movie</h1>
+        <input id="movieInput" type="text" placeholder="Type a Movie Name">
+        <button onclick="searchMovie()">Search</button>
+   </div>
+
+
+     <div id="movieList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
